@@ -24,5 +24,5 @@ unsigned int n1;
 	print_numbers(n1 / 10);
 	}
 
-	_putchar((n1 % 10) + '0');
+	_putchar((n1 % 10) + 0);
 	}
