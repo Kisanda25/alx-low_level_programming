@@ -1,3 +1,31 @@
-VimCrypt~03!ŸúİÙïVOíŠ>‚5u¡ËÃöêÒªV×x CÑş°Ç9Do5Ø„o‰k¡:¢MÔ¿9›‚D`ÙYV½ #q‚7+·dÊÜÃŒväù¦¢sú•*¿U=€Àá+m¹‚m/„¿¥jg´Y:YŸ”‚»–®¬šl¯Ä`ÉVûv¯”¿¨Ñ¸D¦¹&ùÉ«jMÉ„¤1^F½9rSŸYë7ÿ²¤×%QÛ+áâR¦G±om’M pmÄÛb¤ı?Ê£n.Ì?Ò`Ç‹J¿äDÄRíü~g»-‹g¦W°ñó¥šĞóœÂ)B¤Ó¢¢İæ·èša1E…5,?Ñ˜lc¨µÛo?,¨â)¨«Ëk1Ci1è‚T)è€aì–§3ı‰¦Î¿“Ãè™ĞšëŒÑ)Qˆ+’D,¡ó¯]W8ïMsrMu‹Å|O®ƒDv73µYzã]ÓŠ·~
-†‹´?M
-Óÿ{{è†gœ,rŸ±"ÀÎÊªPììµÖüÖ
+#include "main.h"
+
+/**
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	unsigned int n = 0;
+	int r;
+
+
+	while (*s)
+	{
+		for (r = 0; accept[r]; r++)
+		{
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r + 1] == '\0')
+				return (n);
+		}
+		s++;
+	}
+	return (n);
+}
+
