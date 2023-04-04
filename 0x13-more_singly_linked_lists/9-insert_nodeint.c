@@ -29,7 +29,7 @@ ptr->next = *head;
 return (ptr);
 }
 
-for (x = 0; temp && x < idx; x++)
+for (x = 0; holder && x < idx; x++)
 {
 if (x == idx - 1)
 {
