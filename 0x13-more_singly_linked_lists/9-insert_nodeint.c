@@ -15,7 +15,7 @@ unsigned int x;
 listint_t *ptr;
 listint_t *holder = *head;
 
-new = malloc(sizeof(listint_t));
+ptr = malloc(sizeof(listint_t));
 if (!ptr || !head)
 return (NULL);
 
