@@ -13,15 +13,11 @@ size_t print_listint(const listint_t *h)
 	if (h == NULL)
 	printf("linked list is empty");
 
-	listint_t *ptr = NULL;
-
-	ptr = h;
-
-	while (ptr != NULL)
+	while (h != NULL)
 	{
 	count++;
-	printf("%d", ptr->n);
-	ptr = ptr->next;
+	printf("%d", h->n);
+	h = h->next;
 	}
 	return (count);
 }
