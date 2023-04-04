@@ -32,7 +32,7 @@ x++;
 }
 
 
-urrent = holder->next;
+current = holder->next;
 holder->next = current->next;
 free(current);
 
