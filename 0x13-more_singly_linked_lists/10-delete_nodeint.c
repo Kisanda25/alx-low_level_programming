@@ -28,11 +28,11 @@ while (x < index - 1)
 if (!holder || !(holder->next))
 return (-1);
 holder = holder->next;
-i++;
+x++;
 }
 
 
-current = holder->next;
+urrent = holder->next;
 holder->next = current->next;
 free(current);
 
